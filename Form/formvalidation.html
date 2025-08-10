@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+<form action="index.html" method="get">
+
+<label>username:</label>
+<input type="text" name="username" required minlength="5" placeholder="Enter username">
+<br><br>
+<label>Email:</label>
+<input type="email" name="email" required placeholder="example@mail.com">
+
+
+<br><br>
+
+<label>Password:</label>
+<input type="password" name="password" 
+       required 
+       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+       title="Must contain at least one uppercase letter, one lowercase letter, one number, and be at least 6 characters long">
+
+
+<br><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
